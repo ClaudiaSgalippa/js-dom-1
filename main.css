@@ -13,11 +13,11 @@
 /*Lightbulb*/
 
 #spenta {
-    
+    padding-left: 41px;
 }
 
 #accesa {
-
+    display: none;
 }
 
 /*Button*/
