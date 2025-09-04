@@ -14,8 +14,9 @@ let spegniamoLaLampadina = true; //Impostazione valore booleano
 button.addEventListener("click", //Impostazione evento "al premere il bottone"
     function onOff () {
         if (spegniamoLaLampadina) {
-            turnOff.style.display = "none";
-            turnOn.style.display = "block";
+            turnOff.style.display = "none"; //L'immagine della lampadina spenta sparisce
+            turnOn.style.display = "block"; //L'immagine della lampadina accesa compare
+            document.body.style.backgroundColor = "white"; //Cambio sfondo 
         }
     }
 )
