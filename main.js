@@ -20,7 +20,6 @@ console.log(spenta);
 
 const turnOn = document.querySelector("#accesa"); //Selezione lampadina accesa
 console.log(accesa);
-
 let button = document.getElementById("bottone"); //Selezione bottone
 console.log(bottone);
 
@@ -30,19 +29,21 @@ let spegniamoLaLampadina = true; //Impostazione valore booleano
 
 const backgroundPage = document.getElementById("onlyForTheBackground"); //Bonus
 
-button.addEventListener("click", //Impostazione evento "al premere il bottone"
-    function onOff () {
+function onOff () {
         if (spegniamoLaLampadina) {
             turnOff.style.display = "none"; //L'immagine della lampadina spenta sparisce
             turnOn.style.display = "block"; //L'immagine della lampadina accesa compare
-            backgroundPage.style.backgroundColor = "white"; //Cambio sfondo 
+            backgroundPage.style.backgroundColor = "white"; //Cambio sfondo //Bonus
             button.textContent = "Spegni"; //Il testo del bottone cambia //Bonus
+            spegniamoLaLampadina = false; //Cambiamo la condizione del valore booleano //Bonus
+
         } else { //Bonus
-            //spegniamoLaLampadina = true;
-            //turnOff.style.display = "block"; //L'immagine della lampadina spenta compare //Bonus
-            //turnOn.style.display = "none"; //L'immagine della lampadina accesa sparisce //Bonus
-            //backgroundPage.style.backgroundColor = "black"; //Ritorna lo sfondo originale //Bonus
-            //button.textContent = "Accendi"; //Il testo del bottone cambia //Bonus
+            turnOff.style.display = "block"; //L'immagine della lampadina spenta compare //Bonus
+            turnOn.style.display = "none"; //L'immagine della lampadina accesa sparisce //Bonus
+            backgroundPage.style.backgroundColor = "black"; //Ritorna lo sfondo originale //Bonus
+            button.textContent = "Accendi"; //Il testo del bottone cambia //Bonus
+            spegniamoLaLampadina = true; //Ri-cambiamo la condizione del valore booleano //Bonus
         }
     }
-)
+
+button.addEventListener("click",onOff);

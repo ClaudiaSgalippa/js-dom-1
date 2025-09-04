@@ -19,12 +19,12 @@
 /*Lightbulb*/
 
 #spenta {
-    padding-left: 41px;
+    margin-left: 41px;
 }
 
 #accesa {
     display: none;
-    padding-right: 41px;
+    margin-right: 41px;
 }
 
 /*Button*/
