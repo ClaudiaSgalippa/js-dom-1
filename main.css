@@ -4,9 +4,26 @@
     box-sizing: border-box;
 }
 
+/*Utilities*/
+
+.container {
+    display: flex;
+}
+
 /*Lightbulb*/
 
+#spenta {
+    
+}
 
+#accesa {
+
+}
 
 /*Button*/
 
+#bottone {
+    height: fit-content;
+    align-self: flex-end;
+    padding-inline: 5px;
+}
