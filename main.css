@@ -6,8 +6,14 @@
 
 /*Utilities*/
 
-.container {
+
+
+#container {
     display: flex;
+}
+
+#onlyForTheBackground {
+    background-color: black; /*Bonus*/
 }
 
 /*Lightbulb*/
