@@ -14,6 +14,7 @@ Per fare questo bonus potremmo aver bisogno di del metodo string.includes() 😉
 
 Buon Lavoro e buon divertimento!  💡 */
 
+//WARNING ATTACCHI EPILETTICI
 
 const turnOff = document.querySelector("#spenta"); //Selezione lampadina spenta
 console.log(spenta);
